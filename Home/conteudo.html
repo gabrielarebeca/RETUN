@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="containerBodySEO">
+    <h1 >Bem Vindo!</h1>
+    <button id="animationButtom" onclick="window.location.href='./index.html'">
+        <img id="colorImg" src="./assets/image/botão-voltar-35.png" alt="Voltar para Home">
+        Voltar para HOME
+    </button>
+    <h1>Downloads</h1>
+    <ul>
+        <li> 
+            <a href="./assets/docs/PDF.pdf" download="PDF.pdf" type="application/pdf" >Baixar .PDF</a>
+        </li>
+        <li> 
+            <a href="./assets/docs/ZIP.zip" download="ZIP.zip" type="application/zip" >Baixar .ZIP</a>
+        </li>
+    </ul>
+    <picture>
+        <source media="(max-width: 750px)" srcset="./assets/image/image-mobile-750.png" type="image/png">
+        <source media="(max-width: 1100px)" srcset="./assets/image/image-tablet-900.png" type="image/png">
+        <img src="./assets/image/image-desktop-1100.png" alt="Imagem Fléxivel">
+    </picture>
+</body>
+</html>

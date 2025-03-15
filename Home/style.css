@@ -1,5 +1,66 @@
-a {
-    font-family: Georgia;
-    text-decoration: none; 
-    font-size: 20px;
+/*Backgroud Image Index*/
+@keyframes imageAnimation {
+    0% { background-position: 0% 20%; }
+    50% { background-position: 50% 20%; }
+    100% { background-position: 0% 20%; }
+}
+
+.containerBodyIndex{
+    color: white;
+    background-image: linear-gradient(45deg, #4c4c4ebb, transparent),
+                        url('./assets/image/pexels-franco-monsalvo-252430633-13125178.jpg');
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    animation: imageAnimation 50s ease infinite;
+}
+
+/*Backgroud Gradiant SEO*/
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.containerBodySEO {
+    background-image: linear-gradient(to top, #939397bb, #bababdd5, transparent);
+    background-size: 200% 200%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+/*Animação Botão*/
+@keyframes textGradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#animationButtom {
+    /*Estabiliza o Botão*/
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease-in-out infinite;
+     /*Aplica Gradiente no Texto*/
+    background-position: center;
+    background-image: linear-gradient(90deg, #59e06f79, #fc9f14db, #fc143bdb);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradientAnimation 5s ease infinite;
+}
+
+#colorImg {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(39%) saturate(434%) hue-rotate(90deg);
+    transition: 0.3s ease-in-out;
 }

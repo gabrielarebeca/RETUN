@@ -6,14 +6,12 @@
     <title>HOME</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="containerBodyIndex">
     <h1>RETURN</h1>
-    <p>
-        <a href="./SEO.html" target="_blank" rel="next">
-            Ir para Estudos SEO
-            <img src="./assets/image/botao-proximo-35.png" alt="Ir para a próxima página sobre SEO">
-        </a>
-    </p>
+    <button id="animationButtom" onclick="window.location.href='./conteudo.html'">
+        Ir para Conteudo
+        <img id="colorImg" src="./assets/image/botao-proximo-35.png" alt="Ir para a próxima página sobre SEO">
+    </button>
 
     <h1>Música</h1>
     <audio controls autoplay loop>
@@ -22,6 +20,7 @@
         <source src="./assets/audio/House of Mango.wav" type="audio/wav">
         <p>Desculpe, seu navegador não tem compatibilidade com reprodução de áudios</p>
     </audio>
+
     <h1>Vídeo Local</h1>
     <video width="900" poster="./assets/image/poster-video-1365.jpeg" controls loop>
         <source src="./assets/videos/video-dança.mp4" type="video/mp4">
@@ -30,11 +29,13 @@
         <source src="./assets/videos/video-dança.ogv" type="video/ogg">
         <p>Desculpe, seu navegador não tem compatibilidade com reprodução de vídeos</p>
     </video>
+
     <h1>Vídeo Youtube</h1>
     <iframe width="900" height="500" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=ejyjknfYFCSPTQ1J" 
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
     encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-
     origin" allowfullscreen></iframe>
+
     <h1>Vídeo Vimeo</h1>
     <iframe src="https://player.vimeo.com/video/88081351?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="900" height="506" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Classic Rock ID - Hard Rock Hotel"></iframe>
 </body>
